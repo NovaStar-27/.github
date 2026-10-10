@@ -53,12 +53,31 @@ a visualization. **Merged PRs get exclusive 169pi swag. 🎁**
 <!-- ────────────────────────────────────────────────────────────────── -->
 
 <!-- ENTRIES:START -->
-Alpie-Core (32B, 4-bit)  — 1 block = 2.5%
+### @pranvi_2711 — Alpie-Core by the numbers 📊
 
-GSM8K       █████████████████████████████████████  92.75%
-MMLU        ████████████████████████████████▌      81.28%
-SWE-Bench   ███████████████████████                57.8%
+Two quick pictures of Alpie-Core: how it scores, and how small it runs for its size.
 
+```
+Alpie-Core · 32B params · 4-bit · Apache 2.0
+1 block = 2.5%
+
+GSM8K               █████████████████████████████████████  92.75%
+MMLU                ████████████████████████████████▌      81.28%
+SWE-Bench Verified  ███████████████████████                57.8%
+```
+
+```
+ 32B parameters                 one GPU
+┌──────────────────┐   4-bit    ┌────────────────────┐
+│  ░░░░░░░░░░░░░░  │  ───────►  │   ▓▓▓▓▓▓▓▓         │
+│  ░░░░░░░░░░░░░░  │            │   ~16 GB VRAM      │
+└──────────────────┘            └────────────────────┘
+```
+
+*What it represents:* a 32B-parameter reasoning model that is open (Apache 2.0), strong on math, knowledge and real-world coding benchmarks, and small enough to run on a single ~16 GB GPU.
+
+**Club:** Ctrl Freaks
+**Contributed by [@pranvi_2711](https://www.instagram.com/pranvi_2711/)**
 ### @169pi — the first brick 🧱
 
 This wall is yours to build on. Fork the repo, add your entry right here, and
